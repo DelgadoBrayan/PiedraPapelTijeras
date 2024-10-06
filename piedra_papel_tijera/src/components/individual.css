@@ -1,0 +1,122 @@
+*{
+    margin: 0%;
+}
+
+header{
+   
+    height: 130px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding-right: 60px;
+    align-items: center;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+
+.animacionGano{
+    animation:shakeY; 
+    animation-duration: 2s;
+}
+.animacionPerdio{
+    animation:shakeX;
+    animation-duration: 2s;
+}
+.animacionEmpate{
+    animation:flash; 
+    animation-duration: 2s;
+}
+header h1{
+    font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 55px;
+  font-style: normal;
+  font-variation-settings:
+    "ELGR" 1,
+    "ELSH" 2;
+    
+    background-image: linear-gradient(to right, rgb(34, 255, 0) , rgb(0, 149, 255)); /* Define tus colores aquí */
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    animation:backOutUp; 
+  animation-duration: 2s;
+}
+
+.body{
+    background-color: #0b071a;
+    color: white;
+    height: 100vh;
+}
+
+.puntuacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.puntuacion h1{
+    font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 40px;
+  font-style: normal;
+  font-variation-settings:
+    "ELGR" 1,
+    "ELSH" 2;
+}
+.puntuacion span{
+    display: flex;
+    gap: 20px;
+    animation:flash;
+    animation-duration: 6s;
+}
+
+.puntuacion .puntajes{ 
+    display: flex;
+    gap: 90px;
+}
+.size_icon{
+    height: 130px;   
+}
+
+.res{
+    color: black;
+}
+section{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+ 
+}
+section h1{
+    text-align: center;
+    font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 40px;
+  font-style: normal;
+  font-variation-settings:
+    "ELGR" 1,
+    "ELSH" 2;
+}
+
+section div{
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    width: 140px;
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  color: black;
+}
+
+.sectiionP{
+    margin-top: 60px;
+}
+
+.sectiionP :hover{
+    cursor: pointer;
+    transform: scale(1.1)
+    
+}
+
